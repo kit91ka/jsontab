@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script type="text/javascript" src="tabs.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<style type="text/css">
+
+
+* {margin: 0; padding: 0;}
+body {margin: 30px; font: 13px/1.5 "Trebuchet MS", Tahoma, Arial;}
+a {color: blue;}
+p {padding: 7px 0;}
+h1 {font-size: 20px; margin: 0 0 30px;}
+table {
+	border-collapse: collapse; /* Убираем двойные линии */
+	width: 100%; /* Ширина таблицы */
+}
+th {
+	background: #EFEFEF; /* Цвет фона ячеек заголовка */
+	color: #fff; /* Цвет текста */
+}
+td {
+	background: #EFEFEF; /* Цвет фона ячеек */
+	text-align: center; /* Выравниваем по центру */
+}
+td, th {
+	padding: 5px 10px; /* Поля в ячейках */
+	vertical-align: top; /* Выравниваем по верхнему краю */
+}
+
+#wrapper {width: 600px;}
+
+/* tabs */
+ul.tabs {
+	height: 25px;
+	line-height: 25px;
+	margin: 0 0 3px;
+	list-style: none;
+}
+* html ul.tabs {margin-bottom: 0;}
+ul.tabs li {
+	float: left;
+	margin-right: 1px;
+}
+ul.tabs li a {
+	display: block;
+	padding: 0 13px 1px;
+	margin-bottom: -1px;
+	color: #444;
+	text-decoration: none;
+	cursor: pointer;
+	background: #F9F9F9;
+	border: 1px solid #EFEFEF;
+	border-bottom: 1px solid #F9F9F9;
+	position: relative;
+}
+* html ul.tabs li a {float: left}
+*+html ul.tabs li a {float: left}
+ul.tabs li a:hover {
+	color: #F70;
+	padding: 0 13px;
+	background: #FFFFDF;
+	border: 1px solid #FFCA95;
+}
+ul.tabs li.tab-current a {
+	color: #444;
+	background: #EFEFEF;
+	padding: 0px 13px 2px;
+	border: 1px solid #DDD;
+	border-bottom: 1px solid #EFEFEF;
+}
+div.t2 {
+	display: none;
+}
+div.t1,
+div.t2
+{
+	border: 1px solid #DDD;
+	background: #EFEFEF;
+	padding: 0 12px;
+}
+.board {
+	 display: table;
+	 width: 100%;
+	 border-spacing: 10px 10px;
+ }
+
+.component {
+	color: #444;
+	background: #EFEFEF;
+	padding: 0px 13px 2px;
+	border: 1px solid #DDD;
+	border-bottom: 1px solid #EFEFEF;
+	display: table-cell;
+	padding: 10px;
+}
+
+/* end tabs */
+
+/* ]]> */
+</style>
+
+</head>
+
+<body>
+<div class="board">
+<div class ="component" id="qqq"> </div>
+<div id="wrapper" class ="component">
+
+	<ul class="tabs tabs1">
+		<li class="t1 tab-current" id="q1"><a id="qq1">Присутствуют</a></li>
+		<li class="t2" id="q2"><a id="qq2">Выбывшие</a></li>
+		</ul>
+
+	<div class="t1" id="t1tab">
+			</div>
+
+	<div class="t2" id="t2tab">
+		</div>
+
+</div>
+</div>
+</body>
+
+</html>
